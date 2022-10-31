@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins" sans-serif;
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    position: relative;
+    bottom: 9rem;
+    color: blueviolet;
+    -webkit-text-fill-color: #fff;
+    text-shadow: 0 0 2px #3355a4, 0 0 5px #3355a4, 0 0 5px #06f2f1, 0 0 1px #06f2f1, 0 0 10px #06f2f1, 0 0 15px #06f2f1, 0 0 15px #06f2f1;
+    font-family: "Poppins";
+    font-size: 50px;
+}
+
+.time{
+    margin-bottom: 5rem;
+    font-size: 120px;
+    font-family: "Poppins";
+    color: #fff;
+    text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #ef12ca, 0 0 20px #ef12ca, 0 0 1px #ef12ca, 0 0 10px #ef12ca, 0 0 15px #ef12ca;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #ef12ca, 0 0 20px #ef12ca, 0 0 1px #ef12ca, 0 0 10px #ef12ca, 0 0 15px #ef12ca;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 7px #ef12ca, 0 0 25px #ef12ca, 0 0 3px #ef12ca, 0 0 15px #ef12ca, 0 0 20px #ef12ca;
+    }
+  }
+
+.btns{
+    display: flex;
+    gap: 4rem;
+    position: relative;
+    bottom: 3rem;
+    
+}
+
+.btn{
+    padding: .5rem 2rem;
+    font-family: "Poppins";
+    font-size: 25px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px black solid;
+}
+
+.btn:hover{
+    text-shadow: 0 0 5px #3355a4, 0 0 10px #3355a4, 0 0 15px #06f2f1, 0 0 20px #06f2f1, 0 0 25px #06f2f1, 0 0 30px #06f2f1, 0 0 35px #06f2f1;
+}
+
+@media only screen and (max-width: 1280px){
+    body{
+        background-color: black;
+        background-image: none;
+    }
+
+    h1{
+        position: relative;
+        bottom: 8rem;
+        left: 1.5rem;
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .time{
+        font-size: 60px;
+        position: relative;
+        bottom: 3rem;
+        left: 1.5rem;
+    }
+
+    .btns{
+        display: flex;
+        gap: 1.3rem;
+        position: relative;
+        left: 1rem;
+    }
+
+    .btn{
+        border: 2px white solid;
+        padding: .3rem 1rem;
+    }
+}
